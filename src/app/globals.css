@@ -5,6 +5,8 @@
   --foreground: #FFFFFF;
   --primary: #10194E;
   --secondary: #253AB4;
+  --tertiary: #E0E0E0;
+  --text: #A09D9D;
 }
 
 @theme inline {
@@ -12,6 +14,8 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-text: var(--text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

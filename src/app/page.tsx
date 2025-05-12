@@ -12,7 +12,7 @@ export default function Home(){
   const router = useRouter();
 
   useEffect(() => {
-    setTimeout(() => router.push('/get_started'), 3000)
+    setTimeout(() => router.replace('/get_started'), 3000);
   }, [router])
 
   return (

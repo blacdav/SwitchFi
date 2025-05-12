@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Acme } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/header";
 import Navigation from "@/components/navigation";
@@ -12,6 +12,11 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const acme = Acme({
+  weight: '400', // Only 400 is available for Reggae One
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
       <main
-        className={`${geistSans.variable} ${geistMono.variable} antialiased grid grid-rows-12 h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} ${acme.className} antialiased grid grid-rows-12 h-screen`}
       >
         <Header />
         {children}
