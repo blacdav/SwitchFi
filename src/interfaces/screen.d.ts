@@ -1,0 +1,3 @@
+interface ScreenSizeProps {
+    children: ReactNode;
+}

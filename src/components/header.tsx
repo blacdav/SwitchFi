@@ -1,17 +1,17 @@
 "use client"
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import React from 'react'
 import { BiArrowBack } from 'react-icons/bi'
 
 const Header = () => {
     const route = useRouter();
 
-    // const pathname = usePathname();
-    // const dashboard = pathname === '/dashboard';
-    // const dashboard_children = pathname.startsWith('/dashboard/');
+    const pathname = usePathname();
+    const dashboard = pathname === '/dashboard';
+    const dashboard_children = pathname.startsWith('/dashboard/');
 
-    // const create_wallet = pathname === '/create_wallet';
-    // const wallet = pathname === '/wallet';
+    const create_wallet = pathname === '/create_wallet';
+    const wallet = pathname === '/wallet';
 
   return (
     <header className='p-5 border-2 row-span-1 h-full grid grid-cols-12 items-center *:grid *:justify-center'>
