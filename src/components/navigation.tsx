@@ -13,10 +13,10 @@ const Navigation = () => {
   
   return (
     <nav className='row-span-1 grid grid-cols-12 items-center *:grid *:justify-center'>
-        <div className='col-span-3'><Image src={`${home ? '/assets/home-solid.png' : '/assets/home-stroke.png'}`} alt='home' width={500} height={500} /></div>
-        <div className='col-span-3'><Image src={`${wallet ? '/assets/wallet-solid.png' : '/assets/wallet-stroke.png'}`} alt='home' width={500} height={500} /></div>
-        <div className='col-span-3'><Image src={`${transaction_history ? '/assets/transaction-history-solid.png' : '/assets/transaction-history-stroke.png'}`} alt='home' width={500} height={500} /></div>
-        <div className='col-span-3'><Image src={`${user ? '/assets/user-solid.png' : '/assets/user-stroke.png'}`} alt='home' width={500} height={500} /></div>
+        <div className='col-span-3'><Image src={`${home ? '/assets/home-solid.png' : '/assets/home-stroke.png'}`} alt='home' width={500} height={500} className='w-10 h-10' /></div>
+        <div className='col-span-3'><Image src={`${wallet ? '/assets/wallet-solid.png' : '/assets/wallet-stroke.png'}`} alt='home' width={500} height={500} className='w-10 h-10' /></div>
+        <div className='col-span-3'><Image src={`${transaction_history ? '/assets/transaction-history-solid.png' : '/assets/transaction-history-stroke.png'}`} alt='home' width={500} height={500} className='w-10 h-10' /></div>
+        <div className='col-span-3'><Image src={`${user ? '/assets/user-solid.png' : '/assets/user-stroke.png'}`} alt='home' width={500} height={500} className='w-10 h-10' /></div>
     </nav>
   )
 }
