@@ -6,9 +6,9 @@ const Page = () => {
     <main className='p-3 row-span-10'>
       <div>
         <h1 className='font-semibold mb-2'>Welcome TG Exchange,</h1>
-        <div className='h-12 grid grid-cols-3 rounded-md overflow-hidden *:grid *:items-center text-xs'>
+        <div className='h-12 grid grid-cols-3 rounded-md overflow-hidden *:flex *:items-center text-xs'>
             <p className='h-full col-span-2 px-2 text-text'>bhh</p>
-            <div className='h-full col-span-1 flex bg-tertiary px-1'><p>Exchange Link</p><BiCopy /></div>
+            <p className='h-full col-span-1 gap-2 bg-tertiary px-3 justify-center'>Exchange Link<BiCopy /></p>
         </div>
       </div>
 
