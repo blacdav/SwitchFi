@@ -6,7 +6,7 @@ const ScreenSize: React.FC<ScreenSizeProps> = ({ children } ) => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 425);
+            setIsMobile(window.innerWidth <= 520);
         };
         
         handleResize(); // Check screen size initially
