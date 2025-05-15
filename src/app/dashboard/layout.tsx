@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
       <main
-        className={`${geistSans.variable} ${geistMono.variable} ${acme.className} antialiased grid grid-rows-12 h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} ${acme.className} antialiased grid grid-rows-12 h-dvw`}
       >
         <Header />
         {children}
