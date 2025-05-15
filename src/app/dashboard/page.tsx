@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { BiCopy, BiPlus } from 'react-icons/bi'
 
@@ -34,7 +35,7 @@ const Page = () => {
 
             <div className='mt-6'>
                 <div className='flex gap-2 text-sm font-semibold'>
-                    <p>O</p>
+                    <Image src='/assets/circle-arrow-data-transfer-vertical.svg' alt='circle-arrow-data-transfer-vertical' width={100} height={100} className='h-8 w-8' />
                     <div>
                         <p className='text-green-600'>Transaction successful</p>
                         <p>-500 USDT</p>
@@ -43,7 +44,7 @@ const Page = () => {
             </div>
             <div className='mt-6'>
                 <div className='flex gap-2 text-sm font-semibold'>
-                    <p>O</p>
+                    <Image src='/assets/circle-arrow-data-transfer-vertical.svg' alt='circle-arrow-data-transfer-vertical' width={100} height={100} className='h-8 w-8' />
                     <div>
                         <p className='text-green-600'>Transaction successful</p>
                         <p>-500 USDT</p>
