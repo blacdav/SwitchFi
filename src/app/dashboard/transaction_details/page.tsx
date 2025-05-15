@@ -8,7 +8,7 @@ const Page = () => {
       <p className='text-center'>-500 USDT</p>
       <p className='text-center text-green-600'>Successful</p>
 
-      <section className='*:flex *:justify-between *:items-center grid gap-3 text-xl mt-10'>
+      <section className='*:flex *:justify-between *:items-center grid gap-3 text-sm mt-10'>
         <div>
           <p className='text-text font-semibold'>Deposit Account</p>
           <p className='font-semibold'>TG Stores</p>

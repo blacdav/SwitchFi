@@ -1,9 +1,11 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { BiCopy, BiPlus } from 'react-icons/bi'
 
 const Page = () => {
+  const [view, setView] = useState<boolean>(true);
+
   return (
     <main className='p-3 row-span-10'>
       <div>
@@ -14,13 +16,14 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='h-1/4 grid text-sm font-semibold px-5 bg-gradient-to-tr from-primary to-secondary rounded-md text-white mt-5'>
+      <div className='h-1/4 grid text-md font-semibold px-5 bg-gradient-to-tr from-primary to-secondary rounded-md text-white mt-5'>
         <div className='flex justify-between items-center'>
             <p>Your balance</p>
-            <p></p>
+            <Image onClick={() => setView(!view)} src={view ? '/assets/view.svg' : '/assets/hide.svg'} alt='veiws' width={800} height={800} className='h-5 w-5' />
         </div>
         <div className='flex justify-between items-center'>
-            <p className='text-2xl'>N200,000</p>
+            { view && <p className='text-3xl'>N 200,000</p>}
+            { !view && <p className='text-3xl font-extralight flex items-center'>N *********</p>}
             <p>Switch Account</p>
         </div>
       </div>

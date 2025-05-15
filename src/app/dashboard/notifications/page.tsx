@@ -5,7 +5,7 @@ import React from 'react'
 const Page: React.FC = () => {
   return (
     <main className='p-5 row-span-10'>
-      <div className='grid'>
+      <div className='grid text-sm'>
         <div className='flex justify-between items-center'>
             <div className='flex items-center mb-2 gap-2'>
                 <Image src='/assets/circle-arrow-data-transfer-vertical.svg' alt='circle-arrow-data-transfer-vertical' width={100} height={100} className='w-5 h-5' />
