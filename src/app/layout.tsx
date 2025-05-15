@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Acme } from "next/font/google";
+import { Geist, Geist_Mono, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import ScreenSize from "@/components/screenSize";
 
@@ -13,9 +13,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const acme = Acme({
+const garamond = Cormorant_Garamond({
   weight: '400', // Only 400 is available for Reggae One
   subsets: ['latin'],
+  variable: "--font-cormorant-garamond"
 });
 
 export const metadata: Metadata = {
@@ -35,7 +36,7 @@ export default function RootLayout({
     <ScreenSize>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} ${acme.className} antialiased grid grid-rows-12 h-dvh`}
+          className={`${geistSans.variable} ${geistMono.variable} ${garamond.className} antialiased grid grid-rows-12 h-dvh`}
         >
           {children}
         </body>
